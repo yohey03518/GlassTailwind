@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="./dist/main.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 <body>
 <header class="bg-red">
@@ -34,10 +36,11 @@
 </header>
 <main class="mt-10">
     <div class="container">
-        <h1 class="border-[#9F1213] border-l-8 font-bold pl-4 text-2xl">門市據點</h1>
-        <div class="mt-6 flex items-center gap-2">
-            <div class="text-nowrap">選擇地區</div>
-            <select class="border border-[#CED4DAa] h-9 w-full pl-3 py-1.5 text-[#495057]">
+        <h1 class="border-[#9F1213] border-l-8 font-bold pl-4 text-2xl content-center md:text-5xl md:h-[72px]">
+            門市據點</h1>
+        <div class="mt-6 flex items-center gap-2 md:mt-8">
+            <div class="text-nowrap md:text-2xl">選擇地區</div>
+            <select class="border border-[#CED4DAa] h-9 w-full pl-3 py-1.5 text-[#495057] text-[18px]">
                 <option value="台北市">台北市</option>
                 <option value="新北市">新北市</option>
                 <option value="桃園市">桃園市</option>
@@ -46,8 +49,30 @@
                 <option value="高雄市">高雄市</option>
             </select>
         </div>
+        <ul class="mt-6">
+            <li>
+                <img class="h-[224px] object-cover" src="./images/pic1.jpg" alt="location">
+                <h2 class="text-2xl border border-[#00000020] py-2 pl-6">台北中山旗艦店</h2>
+                <div class="border border-[#00000020] flex gap-2 flex-col px-6 py-4">
+                    <div class="flex gap-[11px]">
+                        <span class="material-symbols-outlined h-6 w-6">call</span>
+                        <p class="text-xl">電話：(02)000-1234</p>
+                    </div>
+                    <div class="flex gap-[11px]">
+                        <span class="material-symbols-outlined h-6 w-6">schedule</span>
+                        <p class="text-xl">營業時間：10:00-21:00</p>
+                    </div>
+                    <div class="flex gap-[11px]">
+                        <span class="material-symbols-outlined h-6 w-6">location_on</span>
+                        <p class="text-xl">地址：台北市中山區南京東路25巷2-1號</p>
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
     </div>
 </main>
-<footer></footer>
+<footer>footer here</footer>
 </body>
 </html>
