@@ -567,6 +567,11 @@ video {
   }
 }
 
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -651,12 +656,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-\[11px\] {
   gap: 11px;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .text-nowrap {
@@ -736,6 +741,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-16 {
@@ -842,8 +852,8 @@ video {
     height: 72px;
   }
 
-  .md\:w-\[48\%\] {
-    width: 48%;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-auto {
@@ -941,7 +951,7 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-\[32\%\] {
-    width: 32%;
+  .lg\:w-1\/3 {
+    width: 33.333333%;
   }
 }
