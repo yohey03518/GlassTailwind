@@ -3,33 +3,30 @@ module.exports = {
     content: [
         "./src/**/*.{html,js}"
     ],
+    corePlugins: {
+        container: false
+    },
     theme: {
-        container: {
-            // screens: {
-            //     'sm': '348px',
-            //     'md': '696px',
-            //     'lg': '1296px',
-            // },
-            padding: {
-                DEFAULT: '1rem',
-                sm: '16px',
-            },
-            center: true,
-        },
         extend: {
-            container:{
-              screens:{
-                  'lg': '1296px'
-              }
-            },
-            screens: {
-              'lg': '1296px'
-            },
             colors: {
                 'red': '#AA0601'
             }
         },
     },
-    plugins: [],
+    plugins: [ function ({ addComponents }) {
+        addComponents({
+            '.container': {
+                margin: '0 auto',
+                maxWidth: '100%',
+                padding: '0 1rem',
+                '@screen md': {
+                    maxWidth: '1368px',
+                    padding: '0 36px'
+                }
+            }
+        })
+    }
+
+    ],
 }
 
